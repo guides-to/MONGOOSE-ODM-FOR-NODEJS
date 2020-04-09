@@ -6,6 +6,7 @@ This is a project coded in javascript using mongoose ODM
 
 - nodejs 10+
 - npm/yarn
+- mongodb
 
 ## Setup
 
@@ -21,7 +22,11 @@ Run the following commands in the directory where you have cloned this source co
    npm install
    ```
 
-2. Run the server
+2. Start mongodb server
+   ```sh
+   mongod
+   ```
+3. Run the server
 
    ```bash
    # using yarn
@@ -31,7 +36,7 @@ Run the following commands in the directory where you have cloned this source co
    npm start
    ```
 
-3. You can now access the web app at http://localhost:3000
+4. You can now access the web app at http://localhost:3000
 
 ## Running the application
 
