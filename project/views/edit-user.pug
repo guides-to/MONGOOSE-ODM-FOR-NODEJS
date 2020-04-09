@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h4.mt-4.col-md-6.offset-md-3 New User
+
+  form.col-md-6.offset-md-3(action=`/user/${user._id}/edit`, method="post")
+    .form-group
+      label(for="name") Name
+      input.form-control(type="text", name="name", id="name", required, value=user.name)
+    .form-group
+      label(for="email") Email
+      input.form-control(type="email", name="email", id="email", required, value=user.email)
+    .form-group
+      button.btn.btn-dark.btn-block(type="submit") Submit
+
+  

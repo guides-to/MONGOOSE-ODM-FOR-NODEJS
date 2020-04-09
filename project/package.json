@@ -1,0 +1,29 @@
+{
+  "name": "orm-project",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.3",
+    "@types/express-session": "^1.17.0",
+    "@types/moment": "^2.13.0",
+    "@types/mongoose": "^5.7.8",
+    "@types/node": "^13.9.8",
+    "@types/pug": "^2.0.4",
+    "nodemon": "^2.0.2"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "serve": "nodemon index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "moment": "^2.24.0",
+    "mongoose": "^5.9.7",
+    "morgan": "^1.10.0",
+    "pug": "^2.0.4"
+  }
+}

@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h4.col-md-6.offset-md-3.mt-4 Edit Item
+
+  form.col-md-6.offset-md-3(action=`/item/${item.id}/edit`, method="post")
+    .form-group
+      label(for="title") Title
+      input.form-control(type="text", name="title", id="title", required, value=item.title)
+    .form-group
+      button.btn.btn-dark.btn-block(type="submit") Submit

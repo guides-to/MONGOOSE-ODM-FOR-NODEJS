@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h4.col-md-6.offset-md-3.mt-4 New TODO
+
+  form.col-md-6.offset-md-3(action="/todo/new", method="post")
+    .form-group
+      label(for="title") Title
+      input.form-control(type="text", name="title", id="title", required)
+    .form-group
+      button.btn.btn-dark.btn-block(type="submit") Submit

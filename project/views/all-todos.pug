@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  div
+    h4 All Users
+    span.float-right.mb-4 
+      a.btn.btn-secondary.text-white.btn-sm(href="/todo/new") Add New
+
+  table.table-dark.table
+    tr
+      th Title
+      th Creation Time
+      th Actions
+    tbody
+      each todo in todos
+        tr
+          td= todo.title
+          td= moment(todo.added_on).fromNow()
+          td
+            .btn-group(role="btn-group")
+              a.btn.btn-primary.btn-sm(href=`/todo/${todo.id}/view`) View
+              a.btn.btn-danger.btn-sm(href=`/todo/${todo.id}/delete`) Delete
+              a.btn.btn-success.btn-sm(href=`/todo/${todo.id}/edit`) Edit
+    
